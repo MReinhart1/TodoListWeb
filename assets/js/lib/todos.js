@@ -8,7 +8,7 @@ $("ul").on("click", "li", function(){
 
 
 $("ul").on("click","span", function(event){
-    $(this).parent().fadeOut(500,function(){
+    $(this).parent().fadeOut(200,function(){
         $(this).remove();
     });
     event.stopPropagation();
@@ -33,4 +33,8 @@ $("button").click(function(){
 
 $(".fa-plus").click(function(){
     $("input[type='text']").fadeToggle();
-})
+});
+
+function openWin() {
+    myWindow = window.open("", "", "width=250, height=500");  // Opens a new window
+}
